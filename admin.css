@@ -1,0 +1,121 @@
+/* Overall body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Header styling */
+h1 {
+    text-align: center;
+    color: #4A90E2;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #666;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Card layout for forms */
+form {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #4A90E2;
+    outline: none;
+}
+
+/* Button styles */
+button {
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+.delete-button {
+    background-color: #e74c3c;
+    transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #c0392b;
+}
+
+.edit-button {
+    background-color: #2ecc71;
+    transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+    background-color: #27ae60;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+th {
+    background-color: #4A90E2;
+    color: white;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Override form styles for inline forms (to remove card appearance) */
+.inline-form {
+    background: none; /* Remove background */
+    box-shadow: none; /* Remove shadow */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+}
